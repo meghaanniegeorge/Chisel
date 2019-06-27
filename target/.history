@@ -1,0 +1,12 @@
+testOnly PWM.PWMTOMTester
+testOnly PWM.PWMUATester
+testOnly PWM.PWMTOMTester
+testOnly PWM.PWMUATester
+assertTesterPasses --help
+testOnly PWM.PWMUATester
+testOnly PWM.PWMTOMTester
+testOnly PWM.PWMUATester
+testOnly PWM.PWMVerilatorTester
+testOnly PWM.PWMFirrtlTester
+testOnly PWM.PWMTreadleTester
+testOnly PWM.PWMTOMTester

@@ -1,4 +1,43 @@
-[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:34:7: class PWMTest needs to be abstract, since value device_under_test in class HWIOTester of type chisel3.Module is not defined[0m
-[0m[[0m[31merror[0m] [0m[0mclass PWMTest extends SteppedHWIOTester{   [0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:109:23: not enough arguments for constructor PeekPokeTester: (dut: T, base: Int, logFile: Option[java.io.File])chisel3.iotesters.PeekPokeTester[T].[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter dut.[0m
+[0m[[0m[31merror[0m] [0m[0mclass PWMTest extends PeekPokeTester{   [0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:113:3: not found: value enable_all_debug[0m
+[0m[[0m[31merror[0m] [0m[0m  enable_all_debug = true[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:117:16: not found: value rnd[0m
+[0m[[0m[31merror[0m] [0m[0m    var rise = rnd.nextInt((1 << c.w) - 1) + 1[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:118:16: not found: value rnd[0m
+[0m[[0m[31merror[0m] [0m[0m    var fall = rnd.nextInt((1 << c.w) - 1) + 1  [0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:122:5: not found: value poke[0m
+[0m[[0m[31merror[0m] [0m[0m    poke(c.io.rise, rise)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:123:5: not found: value poke[0m
+[0m[[0m[31merror[0m] [0m[0m    poke(c.io.fall, fall) [0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:126:7: not found: value step[0m
+[0m[[0m[31merror[0m] [0m[0m      step(1)[0m
 [0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:127:7: not found: value expect[0m
+[0m[[0m[31merror[0m] [0m[0m      expect(c.io.out, 1)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:131:7: not found: value step[0m
+[0m[[0m[31merror[0m] [0m[0m      step(1)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:132:7: not found: value expect[0m
+[0m[[0m[31merror[0m] [0m[0m      expect(c.io.out, 0)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:135:5: not found: value step[0m
+[0m[[0m[31merror[0m] [0m[0m    step(1)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:136:5: not found: value expect[0m
+[0m[[0m[31merror[0m] [0m[0m    expect(c.io.out, 1)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/meghag/Chisel/src/test/scala/PWM/PWMTests.scala:142:24: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : PWM.PWMTest[0m
+[0m[[0m[31merror[0m] [0m[0m required: chisel3.testers.BasicTester[0m
+[0m[[0m[31merror[0m] [0m[0m    assertTesterPasses(new PWMTest)[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m13 errors found[0m

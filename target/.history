@@ -10,3 +10,4 @@ testOnly PWM.PWMVerilatorTester
 testOnly PWM.PWMFirrtlTester
 testOnly PWM.PWMTreadleTester
 testOnly PWM.PWMTOMTester
+testOnly PWM.PWMATPTester
